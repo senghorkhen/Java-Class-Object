@@ -44,20 +44,21 @@ public class Book {
 	}
 	
 	// isBorrowed
-	public boolean isBorrowed() {
-		return isBorrowed;
+	public String isBorrowed() {
+		 String status = "";
+		 if(isBorrowed) {
+			 status = "Not available to Borrow";
+		
+		 }else {
+			 status = "Available to Borrowed";
+		 }
+		 return status;
 	}
 	
 	// toString
 	public String toString() {
-	 String status;
-	 if(isBorrowed) {
-		 status = "Not available to Borrow";
 	
-	 }else {
-		 status = "Available to Borrowed";
-	 }
-		
-		return ("Title: " + title + "\n" + " by " + auther + "--published " + publishYear + "\n" + "Status: " + status);
+		isBorrowed();
+		return ("Title: " + title + "\n" + " by " + auther + "--published " + publishYear + "\n" + "Status: " + isBorrowed());
 	}
 }

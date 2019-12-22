@@ -62,27 +62,28 @@ public class Demo {
 		
 		// format
 		List<Book> books = new ArrayList<>();
-		books.add(new Book ("Don't make me think", "Steve Krung", 2000));
-		books.add(new Book ("Pro Java Programming", "Terrill", 2005));
-		books.add(new Book ("Programming in Python 3", "Mark Summerfield",2005));
-		books.add(new Book ("The Clean Coder", "Robert", 2011));
-		books.add(new Book ("The Art of Agile Development", "James Shore", 2007));
-		books.add(new Book ("Head First Design Patterns", "Eric Freeman", 2004));
-		books.add(new Book ("The Linux Command Line", "Willian", 2009));
-		books.add(new Book ("Code Complete", "Steve", 1993));
-		books.add(new Book ("Unit Test patterns", "Gerard Meszaros", 2003));
-		books.add(new Book ("The C++ Programming Language", "Bjarne Stroustup", 2013));
-		System.out.println("------------------------------------------------------------------------------------------");
+		books.add(book1);
+		books.add(book2);
+		books.add(book3);
+		books.add(book4);
+		books.add(book5);
+		books.add(book6);
+		books.add(book7);
+		books.add(book8);
+		books.add(book9);
+		books.add(book10);
+	
+		System.out.println("-------------------------------------------------------------------------------------------------------");
 		
-		System.out.println(String.format("%1$-30s %2$-20s %3$-20s %4$-20s", "TITLE","AUTHER","YEAR","STATUS"));
+		System.out.println(String.format("%30s %20s %10s %30s", "TITLE","AUTHER","YEAR","STATUS"));
 		System.out.println();
-		System.out.println("-----------------------------------------------------------------------------------------");
+		System.out.println("-------------------------------------------------------------------------------------------------------");
 		
 		for(Book Book: books) {
-			System.out.format("%1$-30s %2$-20s %3$-20s %4$-20s", Book.getTitle() , Book.getAuther() , Book.getPublishYear() , Book.isBorrowed());
+			System.out.format("%30s %20s %10s %30s", Book.getTitle() , Book.getAuther() , Book.getPublishYear() , Book.isBorrowed());
 			System.out.println();
 		}
-		System.out.println("-------------------------------------------------------------------------------------------");
+		System.out.println("-------------------------------------------------------------------------------------------------------");
 	}
 
 }
