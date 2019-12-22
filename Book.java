@@ -47,10 +47,10 @@ public class Book {
 	public String isBorrowed() {
 		 String status = "";
 		 if(isBorrowed) {
-			 status = "Not available to Borrow";
+			 status = "Not available";
 		
 		 }else {
-			 status = "Available to Borrowed";
+			 status = "Available";
 		 }
 		 return status;
 	}
@@ -59,6 +59,7 @@ public class Book {
 	public String toString() {
 	
 		isBorrowed();
-		return ("Title: " + title + "\n" + " by " + auther + "--published " + publishYear + "\n" + "Status: " + isBorrowed());
+		
+		return ("Title: " + title + "\n" + " by " + auther + "--published " + publishYear + "\n" + "Status: " + isBorrowed() + "to Borrow");
 	}
 }

@@ -73,17 +73,17 @@ public class Demo {
 		books.add(book9);
 		books.add(book10);
 	
-		System.out.println("-------------------------------------------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
 		
-		System.out.println(String.format("%30s %20s %10s %30s", "TITLE","AUTHER","YEAR","STATUS"));
+		System.out.println(String.format("%30s %25s %15s %30s", "TITLE","AUTHER","YEAR","STATUS"));
 		System.out.println();
-		System.out.println("-------------------------------------------------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
 		
 		for(Book Book: books) {
-			System.out.format("%30s %20s %10s %30s", Book.getTitle() , Book.getAuther() , Book.getPublishYear() , Book.isBorrowed());
+			System.out.format("%30s %25s %15s %30s", Book.getTitle() , Book.getAuther() , Book.getPublishYear() , Book.isBorrowed());
 			System.out.println();
 		}
-		System.out.println("-------------------------------------------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
 	}
 
 }
